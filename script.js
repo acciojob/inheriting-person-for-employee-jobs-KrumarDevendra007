@@ -25,6 +25,16 @@ class Employee extends Person {
     }
 }
 
+// Test case for the Person class
+const testPerson = new Person("Alice", 25);
+testPerson.greet(); 
+
+
+// Test case for the Employee class
+const testEmployee = new Employee("Bob", 30, "Manager");
+testEmployee.jobGreet(); 
+
+
 
 
 // Do not change code below this line
