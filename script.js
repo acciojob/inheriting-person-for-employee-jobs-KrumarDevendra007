@@ -31,8 +31,7 @@ testPerson.greet();
 
 
 // Test case for the Employee class
-const testEmployee = new Employee("Bob", 30, "Manager");
-testEmployee.greet(); 
+const testEmployee = new Employee("Bob", 30, "Manager"); 
 testEmployee.jobGreet(); 
 
 
