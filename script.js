@@ -6,7 +6,7 @@ class Person {
 	}
 
 	function greet(){
-		Console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+		return (`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 	}
 
 	
@@ -19,7 +19,7 @@ class Employee extends Person {
 	}
 
 	function jobGreet(){
-		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+		return (`${this.gree()} and my job title is ${this.jobTitle}.`);
 	}
 }
 
