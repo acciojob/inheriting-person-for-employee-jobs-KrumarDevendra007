@@ -7,7 +7,7 @@ class Person {
 
     // Method to greet
     greet() {
-        console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
     }
 }
 
@@ -26,13 +26,13 @@ class Employee extends Person {
 }
 
 // Test case for the Person class
-const testPerson = new Person("Alice", 25);
-testPerson.greet(); 
+const person = new Person("Alice", 25);
+person.greet(); 
 
 
 // Test case for the Employee class
-const testEmployee = new Employee("Bob", 30, "Manager"); 
-testEmployee.jobGreet(); 
+const employee = new Employee("Bob", 30, "Manager"); 
+employee.jobGreet(); 
 
 
 
