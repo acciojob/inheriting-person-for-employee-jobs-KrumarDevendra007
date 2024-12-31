@@ -1,26 +1,28 @@
-// complete this js code
+// Person class
 class Person {
-	constructor(name, age) {
-		this.name = name;
-		this.age = age;
-	}
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	function greet(){
-		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
-	}
-
-	
+    // Method to greet
+    greet() {
+        console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+    }
 }
 
+// Employee class inheriting from Person
 class Employee extends Person {
-	constructor(name, age, jobTitle) {
-		super(name, age)
-		this.jobTitle = jobTitle;
-	}
+    constructor(name, age, jobTitle) {
+        // Call the parent class constructor
+        super(name, age);
+        this.jobTitle = jobTitle;
+    }
 
-	function jobGreet(){
-		console.log(`${this.gree()}, and my job title is ${this.jobTitle}.`);
-	}
+    // Method specific to Employee
+    jobGreet() {
+        console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+    }
 }
 
 
